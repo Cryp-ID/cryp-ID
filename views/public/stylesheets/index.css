@@ -31,7 +31,7 @@
       }
       .dataTitle {
         cursor: pointer;
-        font-size: 24px;
+        /*font-size: 24px;*/
       }
       #results {
         width: 400px;

@@ -19,7 +19,9 @@ $(document).on("click", "#makenew", function() {
     console.log(data);
     // Add the title and delete button to the #results section
     $("#results").prepend("<p class='dataentry' data-id=" + data._id + "><span class='dataTitle' data-id=" +
-      data._id + ">" + data.exchange + "</span>" + "<span>" +data.address+ "</span> <span class=deleter>X</span></p>");
+      data._id + ">" + data.exchange + " | </span>" + "<span id="+data.address+">" +data.address+ " |</span>" + "<span id=" +
+      data.currency + ">" + data.currency + "</span>" +
+      "<span class=deleter>X</span></p>");
     // Clear the note and title inputs on the page
     $("#exchange").val("");
     $("#address").val("");
